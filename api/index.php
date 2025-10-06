@@ -318,7 +318,7 @@ unset($p);
         <div><strong>Produk Terjamin</strong><div class="muted">Kontrol kualitas ketat setiap batch.</div></div>
       </div>
       <div class="feature"><span class="icon">🚚</span>
-        <div><strong>Pengiriman Cepat</strong><div class="muted">Order < 15.00 kirim di hari yang sama*.</div></div>
+        <div><strong>Pengiriman Cepat</strong><div class="muted">Order hari ini dikirim di hari yang sama*.</div></div>
       </div>
       <div class="feature"><span class="icon">💸</span>
         <div><strong>Banyak Promo</strong><div class="muted">Diskon spesial & bundling hemat.</div></div>
