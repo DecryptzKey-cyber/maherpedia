@@ -6,7 +6,7 @@
 // =====================================================
 
 // 1) KONFIGURASI TOKO
-$whatsapp = getenv('WHATSAPP') ?: '6281348932582'; // baca dari ENV WHATSAPP, fallback ke ini // ← ganti nomor kamu (format internasional tanpa +)
+$whatsapp = getenv('WHATSAPP') ?: '681348932582'; // baca dari ENV WHATSAPP, fallback ke ini // ← ganti nomor kamu (format internasional tanpa +)
 $storeName = 'Maherpedia Store';
 $tagline   = 'Kualitas terbaik, harga bersahabat';
 
@@ -15,178 +15,193 @@ $products = [
   [
     'id' => 1,
     'name' => 'ChatGPT',
+	'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
     'price' => 45000,
     'category' => 'Tools',
     'rating' => 4.8,
     'tag' => 'Best Seller',
     'img' => 'https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Sharing', 'price' => 45000],
-      ['name' => 'Private', 'price' => 109000],
+      ['name' => 'Sharing 1 Bulan', 'price' => 45000],
+      ['name' => 'Private 1 Bulan', 'price' => 109000],
     ],
   ],
   [
     'id' => 2,
     'name' => 'Netflix',
+	'detail' => 'Tipe Sharing = 1U1P (1 User 1 Profile| Tipe Private = 1U5P(1 User 5 Profile).',
     'price' => 35000,
     'category' => 'Streaming',
     'rating' => 4.6,
     'tag' => 'Favorit',
     'img' => 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Sharing',  'price' => 35000],
-      ['name' => 'Private', 'price' => 105000],
+      ['name' => 'Sharing 1 Bulan',  'price' => 35000],
+      ['name' => 'Private 1 Bulan', 'price' => 105000],
     ],
   ],
   [
     'id' => 3,
     'name' => 'Disney+',
+	'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
     'price' => 25000,
     'category' => 'Streaming',
     'rating' => 4.7,
     'tag' => 'Favorit',
     'img' => 'https://images.unsplash.com/photo-1662338571362-5ad7a300074a?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Sharing', 'price' => 25000],
+      ['name' => 'Sharing 1 Bulan', 'price' => 25000],
     ],
   ],
   [
     'id' => 4,
     'name' => 'Canva',
+	'detail' => 'Tipe Pro Invite = Invite via e-mail pribadi | Lifetime = Invite via email pribadi | Head = Bisa Invite max 100 Orang (Akun dari seller).',
     'price' => 11000,
     'category' => 'Tools',
     'rating' => 4.5,
     'tag' => 'Hemat',
     'img' => 'https://images.unsplash.com/photo-1649091245823-18be815da4f7?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Pro Invite', 'price' => 11000],
+      ['name' => 'Pro Invite 1 Bulan', 'price' => 11000],
       ['name' => 'Lifetime',    'price' => 30000],
-	  ['name' => 'Head',    'price' => 14000],
+	  ['name' => 'Head 1 Bulan',    'price' => 14000],
     ],
   ],
   [
     'id' => 5,
     'name' => 'Vidio',
+	'detail' => 'Tipe Platinum = All Device (Akun dari seller).',
     'price' => 40000,
     'category' => 'Streaming',
     'rating' => 4.9,
     'tag' => 'Premium',
     'img' => 'https://yt3.googleusercontent.com/ytc/AIdro_mpHh_f7FDgfWUnJdc6lhUYowj8PvMaKbCApiEuUDsV4ZE=s900-c-k-c0x00ffffff-no-rj',
     'types' => [
-      ['name' => 'Platinum', 'price' => 40000],
+      ['name' => 'Platinum 1 Bulan', 'price' => 40000],
     ],
   ],
   [
     'id' => 6,
     'name' => 'Capcut',
+	'detail' => 'Tipe Pro = 1 bulan (Akun dari seller).',
     'price' => 18000,
     'category' => 'Tools',
     'rating' => 4.6,
     'tag' => 'Limited',
     'img' => 'https://imgsrv2.voi.id/UIa1aQTzEhX8pgQ8XZtHk9ITKZdqCjYTQm4N9rJP3yU/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yMjcyMDQvMjAyMjExMTQxMDM0LW1haW4ucG5n.jpg',
     'types' => [
-      ['name' => '30 Days', 'price' => 18000],
+      ['name' => 'Pro 1 Bulan', 'price' => 18000],
     ],
   ],
   [
     'id' => 7,
     'name' => 'Youtube Premium',
+	'detail' => 'Tipe Individual = Invite via email pribadi | Tipe Family Head = Bisa invite 5 orang (Akun dari seller).',
     'price' => 15000,
     'category' => 'Streaming',
     'rating' => 4.8,
     'tag' => 'Favorit',
     'img' => 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Individual', 'price' => 15000],
-	  ['name' => 'Family Head', 'price' => 30000],
+      ['name' => 'Individual 1 Bulan', 'price' => 15000],
+	  ['name' => 'Family Head 1 Bulan', 'price' => 30000],
     ],
   ],
   [
     'id' => 8,
     'name' => 'IQiyi',
+	'detail' => 'Tipe Premium = Berbagi dengan 4 Orang (akun dari seller).',
     'price' => 14000,
     'category' => 'Streaming',
     'rating' => 4.7,
     'tag' => 'Limited',
     'img' => 'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/97/MTA-159611146/iqiyi_iqiyi_vip_premium_1_tahun_full01_nwcb27ib.jpg',
     'types' => [
-      ['name' => '1 Bulan Premium', 'price' => 14000],
-	  ['name' => '3 Bulan Premium', 'price' => 16500],
-	  ['name' => '12 Bulan Premium', 'price' => 19000],
+      ['name' => 'Premium 1 Bulan', 'price' => 14000],
+	  ['name' => 'Premium 3 Bulan', 'price' => 16500],
+	  ['name' => 'Premium 12 Bulan', 'price' => 19000],
     ],
   ],
   [
     'id' => 9,
     'name' => 'BStation',
+	'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
     'price' => 15000,
     'category' => 'Streaming',
     'rating' => 4.8,
     'tag' => 'Limited',
     'img' => 'https://assets.telkomsel.com/public/2025-05/Bukan-Cuma-Nonton-Anime-Bstation-Bilibili-juga-Bisa-Diskusi-Bareng-Penonton-Lainnya.jpg?VersionId=6dUD2Ar0OYJ6MuWGfW.aW4FU4EPNzzA',
     'types' => [
-      ['name' => 'Sharing', 'price' => 15000],
+      ['name' => 'Sharing 1 Bulan', 'price' => 15000],
+	  ['name' => 'Sharing 3 Bulan', 'price' => 45000],
     ],
   ],
   [
     'id' => 10,
     'name' => 'Prime Video',
+	'detail' => 'Tipe Private = Pemakaian Pribadi (Akun dari seller).',
     'price' => 20000,
     'category' => 'Streaming',
     'rating' => 4.8,
     'tag' => 'Limited',
     'img' => 'https://m.media-amazon.com/images/G/01/support_images/GUID-A5E374A8-16DA-4B39-8E3F-3F3B34E831FB=2=id-ID=Normal.png',
     'types' => [
-      ['name' => 'Private', 'price' => 20000],
+      ['name' => 'Private 1 Bulan', 'price' => 20000],
     ],
   ],
   [
     'id' => 11,
     'name' => 'Viu Premium',
+	'detail' => 'Tipe Private = Pemakaian Pibadi (akun dari seller).',
     'price' => 25000,
     'category' => 'Streaming',
     'rating' => 4.6,
     'tag' => 'Limited',
     'img' => 'https://assets.telkomsel.com/public/2025-01/Cara-Termudah-Langganan-Viu-Hanya-Beberapa-Kali-Klik.jpg?VersionId=ad410H.OkX24LobObo2I.JqmL.TrtfS_',
     'types' => [
-      ['name' => '1 Tahun', 'price' => 25000],
+      ['name' => 'Private 1 Tahun', 'price' => 25000],
     ],
 	],
   [
     'id' => 12,
     'name' => 'GetContact',
+	'detail' => 'Tipe Premium = Proses hanya menggunakan nomor.',
     'price' => 25000,
     'category' => 'Tools',
     'rating' => 4.6,
     'tag' => 'Limited',
     'img' => 'https://assets.telkomsel.com/public/2025-01/getcontact-web.jpg?VersionId=_7OaEFwaJ5c0nL75wOMu4SIyBCvCxNFp_',
     'types' => [
-      ['name' => '1 Bulan', 'price' => 25000],
+      ['name' => 'Premium 1 Bulan', 'price' => 25000],
     ],
 	],
   [
     'id' => 13,
     'name' => 'Alight Motion',
+	'detail' => 'Tipe Premium = Pemakaian Pribadi (akun dari seller).',
     'price' => 27000,
     'category' => 'Tools',
     'rating' => 4.6,
     'tag' => 'Limited',
     'img' => 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/7b/b7/b77bb792-30b0-3e4f-4106-13785586d1d9/AppIcon-0-0-1x_U007emarketing-0-5-0-0-0-0-85-220.png/1200x630wa.png_',
     'types' => [
-      ['name' => '1 Tahun', 'price' => 27000],
+      ['name' => 'Premium 1 Tahun', 'price' => 27000],
     ],
 	],
   [
     'id' => 14,
     'name' => 'Turnitin',
+	'detail' => 'Tipe Premium = Pemakaian Pribadi (akun dari seller).',
     'price' => 35000,
     'category' => 'Tools',
     'rating' => 4.8,
     'tag' => 'Limited',
     'img' => 'https://cdn-1.webcatalog.io/catalog/turnitin/turnitin-social-preview.png?v=1714776263246_',
     'types' => [
-      ['name' => '1 Bulan', 'price' => 35000],
-	  ['name' => '2 Bulan', 'price' => 55000],
-	  ['name' => '3 Bulan', 'price' => 70000],
+      ['name' => 'Premium 1 Bulan', 'price' => 35000],
+	  ['name' => 'Premium 2 Bulan', 'price' => 55000],
+	  ['name' => 'Premium 3 Bulan', 'price' => 70000],
     ],
   ],
 ];
@@ -213,6 +228,8 @@ unset($p);
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?= htmlspecialchars($storeName) ?> — Katalog Produk</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Load SweetAlert2 (taruh di <head> atau sebelum </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     :root{ --bg:#f8fafc; --card:#ffffff; --border:#e5e7eb; --muted:#6b7280; --fg:#0f172a; --primary:#6d28d9; --primary2:#db2777; }
     *{box-sizing:border-box}
@@ -318,7 +335,7 @@ unset($p);
         <div><strong>Produk Terjamin</strong><div class="muted">Kontrol kualitas ketat setiap batch.</div></div>
       </div>
       <div class="feature"><span class="icon">🚚</span>
-        <div><strong>Pengiriman Cepat</strong><div class="muted">Order hari ini dikirim di hari yang sama*.</div></div>
+        <div><strong>Pengiriman Cepat</strong><div class="muted">Order < 15.00 kirim di hari yang sama*.</div></div>
       </div>
       <div class="feature"><span class="icon">💸</span>
         <div><strong>Banyak Promo</strong><div class="muted">Diskon spesial & bundling hemat.</div></div>
@@ -378,7 +395,21 @@ unset($p);
               ?>
               <div class="tools" style="margin-top:12px">
                 <a class="btn primary wa-link" target="_blank" rel="noreferrer" href="https://wa.me/<?= $whatsapp ?>?text=<?= $initMsg ?>">Pesan via WhatsApp</a>
-                <button class="btn" onclick="alert('Detail: <?= htmlspecialchars($p['name']) ?>')">Detail</button>
+               <!-- Tombol dengan SweetAlert2 -->
+<button class="btn" onclick="showDetail('<?= htmlspecialchars($p['detail'], ENT_QUOTES) ?>')">Detail</button>
+
+<!-- Script function -->
+<script>
+function showDetail(detail) {
+    Swal.fire({
+        title: 'Detail',
+        text: detail,
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#3085d6'
+    });
+}
+</script>
               </div>
             </div>
           </div>
