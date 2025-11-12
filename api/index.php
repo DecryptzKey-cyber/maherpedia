@@ -23,7 +23,7 @@ $products = [
     'img' => 'https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
       ['name' => 'Sharing 1 Bulan', 'price' => 45000],
-      ['name' => 'Private 1 Bulan', 'price' => 99000],
+      ['name' => 'Private 1 Bulan', 'price' => 95000],
     ],
   ],
   [
