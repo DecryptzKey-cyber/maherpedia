@@ -24,6 +24,7 @@ $products = [
     'types' => [
       ['name' => 'Sharing 1 Bulan', 'price' => 45000],
       ['name' => 'Private 1 Bulan', 'price' => 95000],
+	  ['name' => 'ChatGPT GO Private 1 Tahun', 'price' => 250000],
     ],
   ],
   [
