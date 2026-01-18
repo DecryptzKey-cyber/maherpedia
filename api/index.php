@@ -15,7 +15,7 @@ $products = [
   [
     'id' => 1,
     'name' => 'ChatGPT',
-	'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
+	'detail' => 'Tipe Sharing = Berbagi dengan 4 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
     'price' => 45000,
     'category' => 'Tools',
     'rating' => 4.8,
