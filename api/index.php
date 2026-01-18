@@ -23,7 +23,7 @@ $products = [
     'img' => 'https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
       ['name' => 'Sharing 1 Bulan', 'price' => 45000],
-      ['name' => 'Private 1 Bulan', 'price' => 95000],
+      ['name' => 'Private 1 Bulan', 'price' => 90000],
 	  ['name' => 'ChatGPT GO Private 1 Tahun', 'price' => 250000],
     ],
   ],
@@ -31,14 +31,14 @@ $products = [
     'id' => 2,
     'name' => 'Netflix',
 	'detail' => 'Tipe Sharing = 1U1P (1 User 1 Profile| Tipe Private = 1U5P(1 User 5 Profile).',
-    'price' => 35000,
+    'price' => 40000,
     'category' => 'Streaming',
     'rating' => 4.6,
     'tag' => 'Favorit',
     'img' => 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Sharing 1 Bulan',  'price' => 35000],
-      ['name' => 'Private 1 Bulan', 'price' => 105000],
+      ['name' => 'Sharing 1 Bulan',  'price' => 40000],
+      ['name' => 'Private 1 Bulan', 'price' => 150000],
     ],
   ],
   [
