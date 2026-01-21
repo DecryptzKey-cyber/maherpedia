@@ -6,7 +6,7 @@
 // =====================================================
 
 // 1) KONFIGURASI TOKO
-$whatsapp = getenv('WHATSAPP') ?: '6281348932582'; // format internasional tanpa +
+$whatsapp = getenv('WHATSAPP') ?: '681348932582'; // format internasional tanpa +
 $storeName = 'Maherpedia Store';
 $tagline   = 'Kualitas terbaik, harga bersahabat';
 
@@ -15,7 +15,7 @@ $products = [
   [
     'id' => 1,
     'name' => 'ChatGPT',
-    'detail' => 'Tipe Sharing = Berbagi dengan 4 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
+    'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
     'price' => 45000,
     'category' => 'Tools',
     'rating' => 4.8,
@@ -254,7 +254,7 @@ unset($p);
     .muted{color:var(--muted)}
     .hero-img{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.15)}
     .hero-card{position:absolute;left:18px;right:18px;bottom:-18px;background:#fff;border:1px solid var(--border);padding:14px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
-    section{padding:72px 0}
+    section{padding:40px 0}
     .grid{display:grid;gap:18px}
     .grid-3{grid-template-columns:repeat(3,1fr)}
     .grid-2{grid-template-columns:repeat(2,1fr)}
@@ -365,6 +365,25 @@ unset($p);
     @media (max-width: 640px){
       .type-pill{ width:100%; justify-content:space-between; }
     }
+	/* Turunkan isi header tanpa memotong background */
+.hero-inner{
+  padding-top: 110px !important;  /* naikkan kalau mau lebih turun */
+  padding-bottom: 72px !important;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .hero-inner{
+    padding-top: 80px !important;
+    padding-bottom: 52px !important;
+  }
+}
+@media (max-width: 640px){
+  .hero-inner{
+    padding-top: 70px !important;
+    padding-bottom: 48px !important;
+  }
+}
   </style>
 </head>
 
