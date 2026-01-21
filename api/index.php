@@ -6,16 +6,16 @@
 // =====================================================
 
 // 1) KONFIGURASI TOKO
-$whatsapp = getenv('WHATSAPP') ?: '6281348932582'; // baca dari ENV WHATSAPP, fallback ke ini // ← ganti nomor kamu (format internasional tanpa +)
+$whatsapp = getenv('WHATSAPP') ?: '681348932582'; // format internasional tanpa +
 $storeName = 'Maherpedia Store';
 $tagline   = 'Kualitas terbaik, harga bersahabat';
 
-// 2) DATA PRODUK (contoh). Bebas ubah/ tambah.
+// 2) DATA PRODUK
 $products = [
   [
     'id' => 1,
     'name' => 'ChatGPT',
-	'detail' => 'Tipe Sharing = Berbagi dengan 4 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
+    'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller) | Tipe Private = Invite via e-mail pribadi.',
     'price' => 45000,
     'category' => 'Tools',
     'rating' => 4.8,
@@ -24,13 +24,12 @@ $products = [
     'types' => [
       ['name' => 'Sharing 1 Bulan', 'price' => 45000],
       ['name' => 'Private 1 Bulan', 'price' => 90000],
-	  ['name' => 'ChatGPT GO Private 1 Tahun', 'price' => 250000],
     ],
   ],
   [
     'id' => 2,
     'name' => 'Netflix',
-	'detail' => 'Tipe Sharing = 1U1P (1 User 1 Profile| Tipe Private = 1U5P(1 User 5 Profile).',
+    'detail' => 'Tipe Sharing = 1U1P (1 User 1 Profile| Tipe Private = 1U5P(1 User 5 Profile).',
     'price' => 40000,
     'category' => 'Streaming',
     'rating' => 4.6,
@@ -44,7 +43,7 @@ $products = [
   [
     'id' => 3,
     'name' => 'Disney+',
-	'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
+    'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
     'price' => 25000,
     'category' => 'Streaming',
     'rating' => 4.7,
@@ -57,7 +56,7 @@ $products = [
   [
     'id' => 4,
     'name' => 'Canva',
-	'detail' => 'Tipe Pro Invite = Invite via e-mail pribadi | Lifetime = Invite via email pribadi | Head = Bisa Invite max 100 Orang (Akun dari seller).',
+    'detail' => 'Tipe Pro Invite = Invite via e-mail pribadi | Lifetime = Invite via email pribadi | Head = Bisa Invite max 100 Orang (Akun dari seller).',
     'price' => 11000,
     'category' => 'Tools',
     'rating' => 4.5,
@@ -65,14 +64,14 @@ $products = [
     'img' => 'https://images.unsplash.com/photo-1649091245823-18be815da4f7?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
       ['name' => 'Pro Invite 1 Bulan', 'price' => 11000],
-      ['name' => 'Lifetime',    'price' => 30000],
-	  ['name' => 'Head 1 Bulan',    'price' => 14000],
+      ['name' => 'Lifetime', 'price' => 30000],
+      ['name' => 'Head 1 Bulan', 'price' => 14000],
     ],
   ],
   [
     'id' => 5,
     'name' => 'Vidio',
-	'detail' => 'Tipe Platinum = All Device (Akun dari seller).',
+    'detail' => 'Tipe Platinum = All Device (Akun dari seller).',
     'price' => 40000,
     'category' => 'Streaming',
     'rating' => 4.9,
@@ -85,7 +84,7 @@ $products = [
   [
     'id' => 6,
     'name' => 'Capcut',
-	'detail' => 'Tipe Pro = 1 bulan (Akun dari seller).',
+    'detail' => 'Tipe Pro = 1 bulan (Akun dari seller).',
     'price' => 18000,
     'category' => 'Tools',
     'rating' => 4.6,
@@ -98,7 +97,7 @@ $products = [
   [
     'id' => 7,
     'name' => 'Youtube Premium',
-	'detail' => 'Tipe Individual = Invite via email pribadi | Tipe Family Head = Bisa invite 5 orang (Akun dari seller).',
+    'detail' => 'Tipe Individual = Invite via email pribadi | Tipe Family Head = Bisa invite 5 orang (Akun dari seller).',
     'price' => 15000,
     'category' => 'Streaming',
     'rating' => 4.8,
@@ -106,13 +105,13 @@ $products = [
     'img' => 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
       ['name' => 'Individual 1 Bulan', 'price' => 15000],
-	  ['name' => 'Family Head 1 Bulan', 'price' => 30000],
+      ['name' => 'Family Head 1 Bulan', 'price' => 30000],
     ],
   ],
   [
     'id' => 8,
     'name' => 'IQiyi',
-	'detail' => 'Tipe Premium = Berbagi dengan 4 Orang (akun dari seller).',
+    'detail' => 'Tipe Premium = Berbagi dengan 4 Orang (akun dari seller).',
     'price' => 14000,
     'category' => 'Streaming',
     'rating' => 4.7,
@@ -120,14 +119,14 @@ $products = [
     'img' => 'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/97/MTA-159611146/iqiyi_iqiyi_vip_premium_1_tahun_full01_nwcb27ib.jpg',
     'types' => [
       ['name' => 'Premium 1 Bulan', 'price' => 14000],
-	  ['name' => 'Premium 3 Bulan', 'price' => 16500],
-	  ['name' => 'Premium 12 Bulan', 'price' => 19000],
+      ['name' => 'Premium 3 Bulan', 'price' => 16500],
+      ['name' => 'Premium 12 Bulan', 'price' => 19000],
     ],
   ],
   [
     'id' => 9,
     'name' => 'BStation',
-	'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
+    'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
     'price' => 15000,
     'category' => 'Streaming',
     'rating' => 4.8,
@@ -135,13 +134,13 @@ $products = [
     'img' => 'https://assets.telkomsel.com/public/2025-05/Bukan-Cuma-Nonton-Anime-Bstation-Bilibili-juga-Bisa-Diskusi-Bareng-Penonton-Lainnya.jpg?VersionId=6dUD2Ar0OYJ6MuWGfW.aW4FU4EPNzzA',
     'types' => [
       ['name' => 'Sharing 1 Bulan', 'price' => 15000],
-	  ['name' => 'Sharing 3 Bulan', 'price' => 45000],
+      ['name' => 'Sharing 3 Bulan', 'price' => 45000],
     ],
   ],
   [
     'id' => 10,
     'name' => 'Prime Video',
-	'detail' => 'Tipe Private = Pemakaian Pribadi (Akun dari seller).',
+    'detail' => 'Tipe Private = Pemakaian Pribadi (Akun dari seller).',
     'price' => 20000,
     'category' => 'Streaming',
     'rating' => 4.8,
@@ -154,7 +153,7 @@ $products = [
   [
     'id' => 11,
     'name' => 'Viu Premium',
-	'detail' => 'Tipe Private = Pemakaian Pibadi (akun dari seller).',
+    'detail' => 'Tipe Private = Pemakaian Pibadi (akun dari seller).',
     'price' => 25000,
     'category' => 'Streaming',
     'rating' => 4.6,
@@ -163,11 +162,11 @@ $products = [
     'types' => [
       ['name' => 'Private 1 Tahun', 'price' => 25000],
     ],
-	],
+  ],
   [
     'id' => 12,
     'name' => 'GetContact',
-	'detail' => 'Tipe Premium = Proses hanya menggunakan nomor.',
+    'detail' => 'Tipe Premium = Proses hanya menggunakan nomor.',
     'price' => 25000,
     'category' => 'Tools',
     'rating' => 4.6,
@@ -176,11 +175,11 @@ $products = [
     'types' => [
       ['name' => 'Premium 1 Bulan', 'price' => 25000],
     ],
-	],
+  ],
   [
     'id' => 13,
     'name' => 'Alight Motion',
-	'detail' => 'Tipe Premium = Pemakaian Pribadi (akun dari seller).',
+    'detail' => 'Tipe Premium = Pemakaian Pribadi (akun dari seller).',
     'price' => 27000,
     'category' => 'Tools',
     'rating' => 4.6,
@@ -189,11 +188,11 @@ $products = [
     'types' => [
       ['name' => 'Premium 1 Tahun', 'price' => 27000],
     ],
-	],
+  ],
   [
     'id' => 14,
     'name' => 'Turnitin',
-	'detail' => 'Tipe Premium = Pemakaian Pribadi (akun dari seller).',
+    'detail' => 'Tipe Premium = Pemakaian Pribadi (akun dari seller).',
     'price' => 35000,
     'category' => 'Tools',
     'rating' => 4.8,
@@ -201,8 +200,8 @@ $products = [
     'img' => 'https://cdn-1.webcatalog.io/catalog/turnitin/turnitin-social-preview.png?v=1714776263246_',
     'types' => [
       ['name' => 'Premium 1 Bulan', 'price' => 35000],
-	  ['name' => 'Premium 2 Bulan', 'price' => 55000],
-	  ['name' => 'Premium 3 Bulan', 'price' => 70000],
+      ['name' => 'Premium 2 Bulan', 'price' => 55000],
+      ['name' => 'Premium 3 Bulan', 'price' => 70000],
     ],
   ],
 ];
@@ -229,8 +228,8 @@ unset($p);
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?= htmlspecialchars($storeName) ?> — Katalog Produk</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Load SweetAlert2 (taruh di <head> atau sebelum </body>) -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <style>
     :root{ --bg:#f8fafc; --card:#ffffff; --border:#e5e7eb; --muted:#6b7280; --fg:#0f172a; --primary:#6d28d9; --primary2:#db2777; }
     *{box-sizing:border-box}
@@ -281,10 +280,94 @@ unset($p);
     .scrolltop{position:fixed;left:18px;bottom:18px;z-index:60}
     .icon{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:#f1f5f9;margin-right:6px}
 
-    @media (max-width:900px){ .hero-inner{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr 1fr} }
-    @media (max-width:640px){ .grid-3,.grid-2{grid-template-columns:1fr} h1{font-size:32px} }
+    /* ====== RESPONSIVE PATCH (MOBILE FRIENDLY) ====== */
+    body { overflow-x: hidden; }
+    .btn, input[type="search"], select { width: auto; max-width: 100%; }
+
+    .nav-inner{ gap: 10px; flex-wrap: wrap; }
+    .nav-actions{ flex-wrap: wrap; justify-content: flex-end; }
+    .nav-actions .btn{ padding: 10px 12px; }
+
+    .hero-card{ left: 14px; right: 14px; }
+
+    #q{ min-width: 220px; flex: 1 1 220px; }
+    #cat{ min-width: 160px; flex: 0 1 200px; }
+
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid-2{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+
+    @media (max-width: 900px){
+      .hero-inner{ grid-template-columns: 1fr; padding: 44px 0; }
+      .grid-3{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+      section{ padding: 52px 0; }
+    }
+
+    @media (max-width: 640px){
+      .container{ padding: 0 14px; }
+      h1{ font-size: 30px; }
+      .badge{ font-size: 12px; }
+      .grid-3,.grid-2{ grid-template-columns: 1fr; }
+
+      .nav-actions{ width: 100%; justify-content: flex-start; }
+      .nav-actions .btn{ flex: 1 1 auto; justify-content: center; }
+
+      #q, #cat{ flex: 1 1 100%; width: 100%; }
+      .hero-card{ position: static; margin: 12px; }
+
+      .floating-wa{ right: 14px; left: 14px; bottom: 14px; width: auto; justify-content: center; }
+      .scrolltop{ left: 14px; bottom: 74px; }
+      .card .p{ padding: 16px; }
+      footer{ padding-bottom: 96px; }
+    }
+
+    /* Gap atas-bawah navbar */
+    .nav-inner{ padding-top:18px; padding-bottom:18px; }
+    @media (max-width: 640px){
+      .nav-inner{ padding-top:14px; padding-bottom:14px; }
+    }
+
+    /* ==== KERENIN PEMILIHAN TIPE (PILLS) ==== */
+    .type-wrap{ margin-top:10px; }
+    .type-label{ font-size:13px; display:block; margin-bottom:8px; color:var(--muted); }
+    .type-pills{ display:flex; flex-wrap:wrap; gap:10px; }
+    .type-pill{
+      position:relative;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:#fff;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .2s, box-shadow .2s, background .2s, border-color .2s;
+    }
+    .type-pill:hover{ transform:translateY(-1px); box-shadow:0 10px 24px rgba(0,0,0,.06); }
+    .type-pill .tname{ font-weight:700; font-size:13px; line-height:1.1; }
+    .type-pill .tprice{ font-size:12px; color:var(--muted); line-height:1.1; }
+    .type-pill.active{
+      border-color: rgba(109,40,217,.35);
+      box-shadow:0 14px 30px rgba(109,40,217,.12);
+      background: linear-gradient(135deg, rgba(109,40,217,.10), rgba(219,39,119,.10));
+    }
+    .type-pill.active::after{
+      content:"✓";
+      position:absolute;
+      top:-8px; right:-8px;
+      width:22px; height:22px;
+      display:grid; place-items:center;
+      border-radius:999px;
+      background: linear-gradient(135deg,var(--primary),var(--primary2));
+      color:#fff; font-size:12px;
+      box-shadow:0 10px 22px rgba(0,0,0,.12);
+    }
+    @media (max-width: 640px){
+      .type-pill{ width:100%; justify-content:space-between; }
+    }
   </style>
 </head>
+
 <body>
   <!-- NAV -->
   <nav class="nav">
@@ -293,10 +376,13 @@ unset($p);
         <div class="brand-badge"></div>
         <span><?= htmlspecialchars($storeName) ?></span>
       </div>
-      <div class="tools">
+      <div class="tools nav-actions">
         <a class="btn" href="#produk">Produk</a>
         <a class="btn" href="#faq">FAQ</a>
-        <a class="btn primary" target="_blank" rel="noreferrer" href="https://wa.me/<?= $whatsapp ?>?text=<?= rawurlencode('Halo, saya butuh bantuan memilih produk.') ?>">Hubungi Kami</a>
+        <a class="btn primary" target="_blank" rel="noreferrer"
+           href="https://wa.me/<?= $whatsapp ?>?text=<?= rawurlencode('Halo, saya butuh bantuan memilih produk.') ?>">
+          Hubungi Kami
+        </a>
       </div>
     </div>
   </nav>
@@ -365,13 +451,18 @@ unset($p);
       <div id="product-grid" class="grid grid-3">
         <?php foreach ($products as $p): ?>
           <?php $defaultType = $p['types'][0]; ?>
-          <div class="card product" data-name="<?= htmlspecialchars(strtolower($p['name'])) ?>" data-cat="<?= htmlspecialchars($p['category']) ?>">
+          <div class="card product"
+               data-name="<?= htmlspecialchars(strtolower($p['name'])) ?>"
+               data-cat="<?= htmlspecialchars($p['category']) ?>">
+
             <div style="position:relative">
               <img class="product-img" src="<?= htmlspecialchars($p['img']) ?>" alt="<?= htmlspecialchars($p['name']) ?>"/>
               <div style="position:absolute;left:12px;top:12px" class="pill"><?= htmlspecialchars($p['tag']) ?></div>
             </div>
+
             <div class="p">
-              <div style="font-weight:600"><?= htmlspecialchars($p['name']) ?></div>
+              <div class="product-name" style="font-weight:600"><?= htmlspecialchars($p['name']) ?></div>
+
               <div class="muted" style="display:flex;gap:8px;align-items:center;margin-top:4px">
                 <span class="price" data-base-price="<?= (int)$defaultType['price'] ?>"><?= currency_idr($defaultType['price']) ?></span>
                 <span>•</span>
@@ -379,44 +470,49 @@ unset($p);
               </div>
 
               <?php if (!empty($p['types'])): ?>
-                <div style="margin-top:10px">
-                  <label for="type-<?= (int)$p['id'] ?>" class="muted" style="font-size:13px;display:block;margin-bottom:6px">Pilih tipe</label>
-                  <select class="type-select" id="type-<?= (int)$p['id'] ?>" style="width:100%;max-width:240px">
-                    <?php foreach ($p['types'] as $t): ?>
-                      <option value="<?= htmlspecialchars($t['name']) ?>" data-price="<?= (int)$t['price'] ?>">
-                        <?= htmlspecialchars($t['name']) ?> — <?= currency_idr($t['price']) ?>
-                      </option>
+                <div class="type-wrap">
+                  <span class="type-label">Pilih tipe</span>
+                  <div class="type-pills" role="radiogroup" aria-label="Pilih tipe produk">
+                    <?php foreach ($p['types'] as $i => $t): ?>
+                      <button
+                        type="button"
+                        class="type-pill <?= $i===0 ? 'active' : '' ?>"
+                        data-type="<?= htmlspecialchars($t['name'], ENT_QUOTES) ?>"
+                        data-price="<?= (int)$t['price'] ?>"
+                        aria-pressed="<?= $i===0 ? 'true' : 'false' ?>"
+                      >
+                        <span class="tname"><?= htmlspecialchars($t['name']) ?></span>
+                        <span class="tprice"><?= currency_idr($t['price']) ?></span>
+                      </button>
                     <?php endforeach; ?>
-                  </select>
+                  </div>
                 </div>
               <?php endif; ?>
 
               <?php
                 $initMsg = rawurlencode('Halo, saya mau pesan: ' . $p['name'] . ' - Tipe: ' . $defaultType['name'] . ' (' . currency_idr($defaultType['price']) . ').');
               ?>
-              <div class="tools" style="margin-top:12px">
-                <a class="btn primary wa-link" target="_blank" rel="noreferrer" href="https://wa.me/<?= $whatsapp ?>?text=<?= $initMsg ?>">Pesan via WhatsApp</a>
-               <!-- Tombol dengan SweetAlert2 -->
-<button class="btn" onclick="showDetail('<?= htmlspecialchars($p['detail'], ENT_QUOTES) ?>')">Detail</button>
 
-<!-- Script function -->
-<script>
-function showDetail(detail) {
-    Swal.fire({
-        title: 'Detail',
-        text: detail,
-        icon: 'info',
-        confirmButtonText: 'OK',
-        confirmButtonColor: '#3085d6'
-    });
-}
-</script>
+              <div class="tools" style="margin-top:12px">
+                <a class="btn primary wa-link" target="_blank" rel="noreferrer"
+                   href="https://wa.me/<?= $whatsapp ?>?text=<?= $initMsg ?>">
+                  Pesan via WhatsApp
+                </a>
+
+                <button class="btn" type="button"
+                        onclick="showDetail('<?= htmlspecialchars($p['detail'], ENT_QUOTES) ?>')">
+                  Detail
+                </button>
               </div>
+
             </div>
           </div>
         <?php endforeach; ?>
       </div>
-      <div id="empty" class="muted" style="text-align:center;margin-top:16px;display:none">Tidak ada produk yang cocok dengan pencarian.</div>
+
+      <div id="empty" class="muted" style="text-align:center;margin-top:16px;display:none">
+        Tidak ada produk yang cocok dengan pencarian.
+      </div>
     </div>
   </section>
 
@@ -465,7 +561,10 @@ function showDetail(detail) {
         <h2 style="margin-top:0">Siap Belanja Hemat Hari Ini?</h2>
         <div class="muted">Tanya stok & promo terbaru langsung ke admin.</div>
         <div style="margin-top:12px">
-          <a class="btn" style="background:#fff;color:#111" target="_blank" rel="noreferrer" href="https://wa.me/<?= $whatsapp ?>?text=<?= rawurlencode('Halo admin, saya mau tanya stok & promo ya.') ?>">💬 Chat WhatsApp Sekarang</a>
+          <a class="btn" style="background:#fff;color:#111" target="_blank" rel="noreferrer"
+             href="https://wa.me/<?= $whatsapp ?>?text=<?= rawurlencode('Halo admin, saya mau tanya stok & promo ya.') ?>">
+            💬 Chat WhatsApp Sekarang
+          </a>
         </div>
       </div>
     </div>
@@ -483,11 +582,25 @@ function showDetail(detail) {
   </footer>
 
   <!-- FLOATING BUTTONS -->
-  <a class="btn primary floating-wa" target="_blank" rel="noreferrer" href="https://wa.me/<?= $whatsapp ?>?text=<?= rawurlencode('Halo, saya tertarik dengan produk Anda.') ?>">📱 Chat WhatsApp</a>
+  <a class="btn primary floating-wa" target="_blank" rel="noreferrer"
+     href="https://wa.me/<?= $whatsapp ?>?text=<?= rawurlencode('Halo, saya tertarik dengan produk Anda.') ?>">
+    📱 Chat WhatsApp
+  </a>
   <button class="btn scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️ Ke atas</button>
 
   <script>
-    // Pencarian & Filter Kategori (tanpa framework)
+    // SweetAlert2: cukup 1x saja
+    function showDetail(detail) {
+      Swal.fire({
+        title: 'Detail',
+        text: detail,
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#3085d6'
+      });
+    }
+
+    // Pencarian & Filter Kategori
     const q = document.getElementById('q');
     const cat = document.getElementById('cat');
     const grid = document.getElementById('product-grid');
@@ -511,43 +624,61 @@ function showDetail(detail) {
     q.addEventListener('input', applyFilter);
     cat.addEventListener('change', applyFilter);
 
-    // Tipe produk: sinkronkan harga & link WA
+    // Format IDR
     function formatIDR(n){
       return new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(n);
     }
 
-    function initTypeSelectors(){
+    // Pills tipe produk: sinkronkan harga & link WA
+    function initTypePills(){
       document.querySelectorAll('.product').forEach(card => {
         const priceEl = card.querySelector('.price');
         const waLink  = card.querySelector('.wa-link');
-        const nameEl  = card.querySelector('.p > div');
+        const nameEl  = card.querySelector('.product-name');
         const name    = nameEl ? nameEl.textContent.trim() : '';
-        const select  = card.querySelector('.type-select');
-        if(!select) return; // produk tanpa tipe
 
-        function update(){
-          const opt       = select.selectedOptions[0];
-          const typeName  = opt?.value || '';
-          const typePrice = +(opt?.dataset.price || priceEl?.dataset?.basePrice || 0);
-          // Update harga display
+        const pillsWrap = card.querySelector('.type-pills');
+        if(!pillsWrap) return;
+
+        function setActive(btn){
+          pillsWrap.querySelectorAll('.type-pill').forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed','false');
+          });
+
+          btn.classList.add('active');
+          btn.setAttribute('aria-pressed','true');
+
+          const typeName  = btn.dataset.type || '';
+          const typePrice = Number(btn.dataset.price || 0);
+
           if(priceEl) priceEl.textContent = formatIDR(typePrice);
-          // Update link WA
+
           if(waLink){
             const msg = `Halo, saya mau pesan: ${name} - Tipe: ${typeName} (${formatIDR(typePrice)}).`;
             waLink.href = `https://wa.me/<?= $whatsapp ?>?text=${encodeURIComponent(msg)}`;
           }
         }
-        select.addEventListener('change', update);
-        update(); // inisialisasi awal
+
+        pillsWrap.addEventListener('click', (e) => {
+          const btn = e.target.closest('.type-pill');
+          if(!btn) return;
+          setActive(btn);
+        });
+
+        const first = pillsWrap.querySelector('.type-pill.active') || pillsWrap.querySelector('.type-pill');
+        if(first) setActive(first);
       });
     }
-    initTypeSelectors();
 
-    // Animasi sederhana untuk blob
+    document.addEventListener('DOMContentLoaded', initTypePills);
+
+    // Animasi blob
     let t=0; const b1=document.querySelector('.blob.one'), b2=document.querySelector('.blob.two');
     function animate(){
-      t+=0.01; if(b1){b1.style.transform=`translate(${Math.sin(t)*6}px, ${Math.cos(t)*6}px)`}
-      if(b2){b2.style.transform=`translate(${Math.cos(t)*8}px, ${Math.sin(t)*8}px)`}
+      t+=0.01;
+      if(b1){ b1.style.transform=`translate(${Math.sin(t)*6}px, ${Math.cos(t)*6}px)` }
+      if(b2){ b2.style.transform=`translate(${Math.cos(t)*8}px, ${Math.sin(t)*8}px)` }
       requestAnimationFrame(animate);
     }
     requestAnimationFrame(animate);
