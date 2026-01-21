@@ -6,7 +6,7 @@
 // =====================================================
 
 // 1) KONFIGURASI TOKO
-$whatsapp = getenv('WHATSAPP') ?: '681348932582'; // format internasional tanpa +
+$whatsapp = getenv('WHATSAPP') ?: '6281348932582'; // format internasional tanpa +
 $storeName = 'Maherpedia Store';
 $tagline   = 'Kualitas terbaik, harga bersahabat';
 
