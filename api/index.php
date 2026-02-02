@@ -44,13 +44,13 @@ $products = [
     'id' => 3,
     'name' => 'Disney+',
     'detail' => 'Tipe Sharing = Berbagi dengan 5 Orang (akun dari seller).',
-    'price' => 25000,
+    'price' => 30000,
     'category' => 'Streaming',
     'rating' => 4.7,
     'tag' => 'Favorit',
     'img' => 'https://images.unsplash.com/photo-1662338571362-5ad7a300074a?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Sharing 1 Bulan', 'price' => 25000],
+      ['name' => 'Sharing 1 Bulan', 'price' => 30000],
     ],
   ],
   [
