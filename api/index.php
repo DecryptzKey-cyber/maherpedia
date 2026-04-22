@@ -36,7 +36,7 @@ $products = [
     'tag' => 'Favorit',
     'img' => 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
-      ['name' => 'Sharing 1 Bulan',  'price' => 40000],
+      ['name' => 'Sharing 1 Bulan',  'price' => 45000],
       ['name' => 'Private 1 Bulan', 'price' => 150000],
     ],
   ],
@@ -64,7 +64,7 @@ $products = [
     'img' => 'https://images.unsplash.com/photo-1649091245823-18be815da4f7?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'types' => [
       ['name' => 'Pro Invite 1 Bulan', 'price' => 11000],
-      ['name' => 'Lifetime', 'price' => 30000],
+      ['name' => 'Lifetime', 'price' => 45000],
       ['name' => 'Head 1 Bulan', 'price' => 14000],
     ],
   ],
